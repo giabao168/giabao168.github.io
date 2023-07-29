@@ -59,10 +59,12 @@ body {
   transition: .3s; /* For animation dark mode */
 }
 
+/* Các tiêu đề */
 h1, h2, h3 {
-  color: var(--title-color);
+  color: #eaeaea; /* Mã màu trắng (#eaeaea) */
   font-weight: 600;
 }
+
 
 ul {
   list-style: none;
@@ -417,13 +419,25 @@ body.dark-theme {
 }
 
 /*=============== FOOTER ===============*/
+/* Căn giữa nội dung trong .footer__copy */
 .footer__copy {
-  display: block;
-  margin: 2.5rem 0 2rem;
-  text-align: center;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  display: flex;
+  justify-content: center;
 }
+
+/* Đổi màu của các liên kết và các chữ khác */
+.contact-items a, .footer__copy span {
+  color: #eaeaea; /* Mã màu trắng (#eaeaea) */
+  text-decoration: none; /* Loại bỏ gạch chân cho liên kết và các chữ khác */
+  transition: color 0.3s; /* Thêm hiệu ứng mượt mà khi thay đổi màu */
+}
+
+/* Đổi màu của liên kết và các chữ khác khi hover */
+.contact-items a:hover, .footer__copy a:hover {
+  color: #eaeaea; /* Mã màu trắng nhạt (#eaeaea) */
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
@@ -542,4 +556,174 @@ body.dark-theme {
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
   }
+}
+/* RESET CSS */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Comfortaa", cursive; */
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+a,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+body {
+min-height: 100vh;
+background-image: linear-gradient(to right bottom, rgb(26, 24, 37), rgb(26, 24, 37));
+background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn trang */
+}
+
+/* CSS FOR PROFILE SECTION */
+.profile {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("img/background.png"); /* Đường dẫn tới ảnh background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profile__container {
+    display: grid;
+    gap: 20px;
+}
+.profile__data {
+    text-align: center;
+}
+.profile__border {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.profile__perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile__name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.profile__profession {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+}
+.profile__info {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.profile__info-group {
+    text-align: center;
+}
+.profile__info-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.profile__info-description {
+    font-size: 14px;
+    color: #888;
+}
+.profile__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(52, 152, 219, 0.7); /* Màu làm mờ của background */
+    border: none;
+    border-radius: 20px; /* Bán kính bo tròn */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(52, 152, 219, 1); /* Màu nền của background */
+}
+
+/* CSS FOR CONTACT SECTION */
+.contact-items {
+    width: 95%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.link-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-item a:hover {
+  color: #eaeaea;
+}
+
+/* Đưa các chữ vào trung tâm (center) */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link-item {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 5px 0;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.185);
+  background-color: rgba(36, 33, 33, 0.242); /* Màu nền mờ (sử dụng rgba()) */
+  backdrop-filter: blur(2px); /* Áp dụng hiệu ứng mờ (blur) */
+  transition: transform 0.3s ease;
+}
+
+/* Đổi màu của liên kết và các chữ khác khi hover */
+.link-item:hover {
+  transform: scale(1.1); /* Khi trỏ chuột vào, phóng to lên 110% kích thước ban đầu */
+  background-color: rgba(51, 51, 51, 0.7); /* Màu nền mờ khi hover */
+  backdrop-filter: blur(2px); /* Tăng mức blur khi hover */
+}
+
+
+
+.link-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* Additional styles for responsiveness */
+@media screen and (min-width: 769px) {
+    .links {
+        flex-direction: Column; /* Đổi từ flex-wrap thành flex-direction */
+    }
 }
