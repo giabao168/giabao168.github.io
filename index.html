@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Gia Bảo WEB - PROFILE</title>
- 
+        <meta charset="utf-8">
+        <title> WEB - PROFILE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <canvas></canvas><script src="assets/js/java.js"></script>
+       
+
 </head>
 <body>
     <header class="profile container">
+
+
+        <!-- GIỚI THIỆU -->
+
+
+
         <div class="profile__container grid">
             <div class="profile__data">
                 <div class="profile__border">
@@ -17,43 +25,41 @@
                         <img alt="" src="img/avt.png"> <!-- Đường dẫn tới ảnh avatar -->
                     </div>
                 </div>
+
                 <h2 class="profile__name">Nguyen Van Gia Bao</h2>
                 <h3 class="profile__profession">Web developer</h3>
-                <ul class="profile__social">
-                    <!-- Here you can add social media links -->
-                </ul>
+
             </div>
             <div class="profile__info grid">
                 <div class="profile__info-group">
+
                     <h3 class="profile__info-number">2009</h3>
                     <p class="profile__info-description">Năm sinh</p>
+
                 </div>
                 <div class="profile__info-group">
+
                     <h3 class="profile__info-number">100K+</h3>
                     <p class="profile__info-description">Follow</p>
+
                 </div>
                 <div class="profile__info-group">
+
                     <h3 class="profile__info-number">96</h3>
                     <p class="profile__info-description">Website</p>
-                </div>
+                
+                </div>              
             </div>
             <div class="profile__buttons">
-                <!-- The "Th&ocirc;ng Tin C&aacute; Nh&acirc;n - Thanh To&aacute;n" button is hidden -->
                 <a class="button payment-button" href="thongtinthanhtoan" style="display: none;">Th&ocirc;ng Tin C&aacute; Nh&acirc;n - Thanh To&aacute;n</a>
-                <!-- The "Gửi Tới Cậu N&egrave; !!" button -->
                 <a class="button" href="guicrushne">Gửi Tới Cậu N&egrave; !!</a>
-                <div class="profile__buttons-small">
-                    <!-- Here you can add some small buttons if needed -->
-                </div>
             </div>
         </div>
     </header>
 
-    <main class="main">
-        <section class="filters container">
-            <!-- Filters content here -->
-        </section>
-    </main>
+
+              <!-- CONTACTTTTTTTTTTTTT-->
+
 
     <div class="contact-items">
         <h3>Contact with me</h3>
@@ -80,49 +86,18 @@
             </li>
         </ul>
     </div>
-    
+
+
+
+
+    <!--FOOTER HEREEEEE-->
+
+
+
     
     <footer class="footer container">
         <span class="footer__copy">&copy; <a href="https://zalo.me/0832081286"><span class="name">Gia Bao</span></a>. NO COPPY - CODE WEB N&Agrave;Y KHỔ LẮM</span>
     </footer>
-
-    <!-- JS and ScrollReveal scripts here -->
-    <script>
-        // JavaScript to automatically change text color based on background color
-        function hexToRgb(hex) {
-            const bigint = parseInt(hex.replace('#', ''), 16);
-            const r = (bigint >> 16) & 255;
-            const g = (bigint >> 8) & 255;
-            const b = bigint & 255;
-            return `rgb(${r}, ${g}, ${b})`;
-        }
-
-        function getLuminance(rgb) {
-            const [r, g, b] = rgb.match(/\d+/g).map(Number);
-            return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-        }
-
-        function setTextColor(element, backgroundColor) {
-            const rgbBackgroundColor = hexToRgb(backgroundColor);
-            const luminance = getLuminance(rgbBackgroundColor);
-            const textColor = luminance > 0.5 ? '#000000' : '#ffffff';
-            element.style.color = textColor;
-        }
-
-        // Get all elements with text content inside the profile container
-        const profileContainer = document.querySelector('.profile__container');
-        const elementsWithText = profileContainer.querySelectorAll('*:not(script):not(style):not(title):not(meta):not(link):not(head)');
-
-        // Loop through all elements with text and set text color
-        elementsWithText.forEach(element => {
-            const computedStyle = getComputedStyle(element);
-            const backgroundColor = computedStyle.backgroundColor;
-
-            // Ignore elements with transparent background or no background color set
-            if (backgroundColor && backgroundColor !== 'transparent') {
-                setTextColor(element, backgroundColor);
-            }
-        });
-    </script>
+    <script src="assets/css/java.js"></script>
 </body>
 </html>
