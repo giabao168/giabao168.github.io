@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Tổng quan - ToolGiaRe</title>
+    <meta name="description" content="TOOL CHECK THÔNG TIN LIÊN QUÂN, CHECK TÊN TRANG PHỤC,...">
+    <meta name="keywords" content="TOOL CHECK THÔNG TIN LIÊN QUÂN, CHECK TÊN TRANG PHỤC,...">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta property="og:title" content="TOOL CHECK THÔNG TIN LIÊN QUÂN, CHECK TÊN TRANG PHỤC,...">
+    <meta property="og:description" content="TOOL CHECK THÔNG TIN LIÊN QUÂN, CHECK TÊN TRANG PHỤC,...">
+    <meta property="og:url" content="https://toolgiare.sbs">
+    <meta property="og:image" content="https://i.imgur.com/wInHQBJ.jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    
+    <meta property="og:type" content="website">
+    <meta name="author" content="Boi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon icon -->
+    <link rel="icon" href="wInHQBJ.jpeg" type="image/x-icon">
+    <link href="css2?family=Roboto:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/fonts/tabler-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/feather.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/material.css">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/plugins/style.css">
+
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-switch-button.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/customizer.css">
+    <link rel="stylesheet" href="assets/css/custome.css">
+    <style>
+        :root {
+            --color-customColor: theme-1;
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/custom-color.css">
+    <link rel="stylesheet" href="npm/simple-notify%401.0.4/dist/simple-notify.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1731070436" id="main-style-link">
+    <link rel="stylesheet" href="assets/css/custom-api.css?v=1731070436" id="main-style-link">
+    <link rel="stylesheet" href="assets/css/ant.css">
+    <link rel="stylesheet" href="assets/css/ant2.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel='stylesheet' href='nprogress%400.2.0/nprogress.css'>
+    <script src='nprogress%400.2.0/nprogress.js'></script>
+    <script src="7.2/pusher.min.js"></script>
+    <script src="ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async=""></script>
+    <script src="turnstile/v0/b/22755d9a86c9/api.js" async="" defer=""></script>
+    <script id="AntiDevTools">
+    setInterval(function() {
+        var before = new Date().getTime();
+        debugger;
+        var after = new Date().getTime();
+        if (after - before > 200) {
+            document.querySelector("html").innerHTML = "";
+            window.location.reload(true);
+        }
+    }, 100);
+    document.getElementById("AntiDevTools").remove();
+    </script>
+    <script>
+        function showMessage(message, type) {
+            const commonOptions = {
+                effect: 'slide',
+                speed: 300,
+                customClass: null,
+                customIcon: null,
+                showIcon: true,
+                showCloseButton: true,
+                autoclose: true,
+                autotimeout: 3000,
+                gap: 20,
+                distance: 20,
+                type: 'outline',
+                position: 'right top'
+            };
+    
+            const options = {
+                success: {
+                    status: 'success',
+                    title: 'Thành công!',
+                    text: message,
+                },
+                error: {
+                    status: 'error',
+                    title: 'Thất bại!',
+                    text: message,
+                }
+            };
+            new Notify(Object.assign({}, commonOptions, options[type]));
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        .authentication-body {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .authentication-body img {
+            height: calc(200px + 220*(100vw - 320px) / 1600);
+        }
+    
+        .empty-state {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f066;
+        }
+    
+        .mail-pagination {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            padding: 16px;
+        }
+    
+        .mail-pagination .pagination-button,
+        .mail-pagination .pagination-number {
+            padding: 0px 12px;
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+            border: unset;
+        }
+    
+        .mail-pagination .pagination-button.disabled {
+            background-color: rgba(242, 243, 247, 0.7);
+            color: rgba(82, 82, 108, 0.8);
+            opacity: 1;
+        }
+    
+        .mail-pagination .pagination-number {
+            padding: 6px 12px;
+        }
+    
+        .mail-pagination .pagination-number.active {
+            background-color: #0CAF60;
+            color: #fff;
+        }
+    
+        .mail-pagination .pagination-index {
+            display: flex;
+            gap: 12px;
+        }
+    
+        .filter-btn {
+            width: 100%;
+            font-size: 15px;
+            padding: 8px 0px;
+            border-radius: 8px;
+            color: #000;
+            background: #e8e8e8;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s
+        }
+    
+        .filter-btn:hover {
+            color: #fff;
+            background: #0CAF60
+        }
+    
+        .filter-btn i {
+            margin-right: 8px;
+            margin-top: -1px
+        }
+    
+        .hidden {
+            display: none;
+        }
+    
+        .card-wrapper {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+    
+        .view-details {
+            margin: 30px;
+        }
+    
+        .active-select {
+            border: 2px solid #15ab64 !important;
+        }
+    
+        .wallet-card-group {
+            display: -ms-grid;
+            display: grid;
+            grid-gap: 20px;
+            -ms-grid-columns: (minmax(200px, 1fr)) [ auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            -ms-grid-rows: auto;
+            grid-template-rows: auto;
+        }
+    
+        .wallet-card {
+            padding: 25px;
+            border-radius: 8px;
+            background: #f5f5f5;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+        }
+    
+        .card-bank {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .card-bank:hover {
+            transform: scale(1.05);
+        }
+    
+        .footer-social li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    
+        .footer-social li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .footer-social li a i {
+            color: #007ea8;
+            font-size: 20px;
+            line-height: 40px;
+        }
+         .alert-boi {
+            border-radius: .375rem;
+            padding: 1rem 1.25rem;
+            position: relative;
+        }
+        .alert-warning {
+            background-color: #6454f0;
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity));
+        }
+        .alert-danger {
+            --tw-bg-opacity: 1;
+            background-color: rgba(211, 41, 41, var(--tw-bg-opacity));
+            --tw-text-opacity: 1;
+            color: rgba(255, 255, 255, var(--tw-text-opacity));
+        }
+
+        @keyframes colorChange {
+            0% { background-color: #ffc107; }    
+            20% { background-color: #28a745; }   
+            40% { background-color: #17a2b8; }   
+            60% { background-color: #dc3545; }  
+            80% { background-color: #007bff; } 
+            100% { background-color: #ffc107; } 
+        }
+    
+        .bg-change {
+            animation: colorChange 3s infinite;
+            color: white; 
+            padding: 0.5em 1em;
+        }
+    </style><div class="announcebar">
+    <p class="text-center text-capitalize" style="font-size: 17px"> 
+    TOOLGIARE.SBS KHÔNG CHỊU BẤT CỨ HÌNH THỨC PHÁP LÝ NÀO!
+    </p>
+</div>
+<nav class="dash-sidebar light-sidebar transprent-bg">
+    <div class="navbar-wrapper">
+        <div class="m-header main-logo">
+            <a href="home.html" class="b-brand">
+              <img data-src="https://i.imgur.com/wInHQBJ.jpeg" alt="" class="logo logo-lg lazyload" src="assets/images/lazyload.gif">
+            </a>
+        </div>
+        <div class="navbar-content">
+            <ul class="dash-navbar">
+
+                <li class="dash-item dash-hasmenu">
+                    <a href="home.html" class="dash-link d-flex align-items-center">
+                        <span class="dash-micon"><i class="ti ti-home"></i></span>
+                        <div class="text-center"> <span class="dash-mtext">Tổng quan</span>
+                        </div>
+                    </a>
+                </li>
+                                <li class="dash-item dash-hasmenu">
+                    <a href="/taoanh" class="dash-link"> <span class="dash-micon"><i class="fa fa-image"></i></span>
+                        <span class="dash-mtext">Tạo ảnh</span><span class="dash-arrow"> </span> </a>
+                </li>
+                <li class="dash-item dash-hasmenu">
+                    <a href="/rechange" class="dash-link"> <span class="dash-micon"><i class="ti ti-credit-card"></i></span>
+                        <span class="dash-mtext">Nạp tiền</span><span class="dash-arrow"> </span> </a>
+                </li>
+                <li class="dash-item dash-hasmenu">
+                    <a href="/history" class="dash-link"> <span class="dash-micon"><i class="ti ti-circle-dashed"></i></span>
+                        <span class="dash-mtext">Lịch sử</span>
+                    </a>
+                </li>
+                <li class="dash-item dash-hasmenu">
+                    <a href="#!" class="dash-link"> <span class="dash-micon"><i class="ti ti-tool"></i></span>
+                        <span class="dash-mtext">Tiện ích</span><span class="dash-arrow"> <i data-feather="chevron-right"></i> </span> </a>
+                    <ul class="dash-submenu">
+                        <li class="dash-item"><a href="/locacc" class="dash-link">Lọc Tài Khoản TTT & FULL TT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dash-item dash-hasmenu">
+                    <a href="/profile" class="dash-link"> <span class="dash-micon"><i class="ti ti-user"></i></span>
+                        <span class="dash-mtext">Hồ sơ</span><span class="dash-arrow"></span> </a>
+                </li>
+                                            </ul>
+        </div>
+    </div>
+</nav>
+<body class="theme-1">
+    <div class="loader-wrapper">
+        <span class="site-loader"> </span>
+        <h3 class="loader-content"> Đang Tải... </h3>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            var loadingOverlay = document.querySelector('.loader-wrapper');
+            loadingOverlay.style.display = 'none';
+        });
+    </script>
+    <header class="dash-header transprent-bg">
+        <div class="header-wrapper">
+            <div class="me-auto dash-mob-drp">
+                <ul class="list-unstyled">
+                    <li class="dash-h-item mob-hamburger">
+                        <a href="#!" class="dash-head-link" id="mobile-collapse">
+                            <div class="hamburger hamburger--arrowturn">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ms-auto">
+                <ul class="list-unstyled">
+                    <li class="dropdown dash-h-item drp-company">
+                        <a class="dash-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <span class="theme-avtar">
+                                <img alt="#" class="img-fluid rounded lazyload" data-src="/assets/images/avt.png" src="assets/images/lazyload.gif" style="width: 100%">
+                            </span>
+                            <span class="hide-mob ms-2">Khách</span>
+                            <i class="ti ti-chevron-down drp-arrow nocolor hide-mob"></i>
+                        </a>
+                        <div class="dropdown-menu dash-h-dropdown">
+                                                        <a href="/login" class="dropdown-item">
+                                <i class="ti ti-user"></i>
+                                <span>Đăng nhập</span>
+                            </a>
+                                                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>    <section class="dash-container">
+    <div class="dash-content">
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="page-header-title">
+                            <h4 class="m-b-10"> Tổng quan
+                            </h4>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home.html">Tổng quan</a></li>
+                            <li class="breadcrumb-item active">
+                                Thống kê tài khoản
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert"><p><span style="font-family: " source="" sans="" pro";"="">﻿FIX LỖI KHÔNG VÀO ĐƯỢC TOOL </span>TRUY CẬP VÀO <a href="https://www.whatismyip.com/" target="_blank">ĐÂY</a> <span style="font-size: 1rem;">ĐỂ LẤT ĐỊA CHỈ IP CHÍNH XÁC, IPV4 KHÔNG ĐƯỢC THÌ IPV6 VÀ NGƯỢC LẠI</span></p><p><a href="https://zalo.me/g/qtonsj271" target="_blank">BOX ZALO</a><br></p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+                <div class="alert-boi alert-danger mb-3" role="alert">Xin lưu ý: Bạn chỉ được mở tối đa 2 tab khi sử dụng TOOL. Nếu hệ thống phát hiện vi phạm, tài khoản của bạn sẽ bị khóa.</div></div>
+            <div class="col-xl-5 h-100">
+                <div class="fancy-card mb-3">
+                    <div class="block-content text-center">
+                        <img class="img-avatar img-avatar52 bg-light mb-1 lazyload" data-src="/assets/images/avt.png" src="assets/images/lazyload.gif" alt="">
+                        <div>Xin chào Khách</div>
+                                            </div>
+                    <div class="fancy-footer mt-2" style="background-color: #0000001a;">
+                        <div class="d-flex justify-content-center gap-7">
+                            <a class="" href="/rechange">
+                                <i class="nav-main-link-icon fa fa-circle-dollar-to-slot"></i> Nạp tiền
+                            </a>
+                            <a class="" href="/profile">
+                                <i class="nav-main-link-icon fa fa-user"></i> Thông tin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">
+                                THÔNG TIN
+                            </h5>
+                        </div>
+                    </div>
+                                        <div class="card-body" style="text-align: center; color: red; font-style: italic;">
+                        đăng nhập để tiếp tục
+                    </div>
+                                    </div>
+            </div>
+                <div class="col-xl-7 h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">
+                                   Danh sách TOOL
+                                    <em class="fs-sm text-danger" style="font-size: 0.7rem;">(thuê TOOL nào chọn vào ảnh TOOL đấy.)</em>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                                                <div class="col-6 text-center position-relative" role="button" data-bs-toggle="tooltip" data-bs-original-title="Nhấn vào đây để thuê TOOL" onclick="location.href='/thuetool/31';">
+                                    <img class="img-avatar img-avatar48 lazyload" src="assets/images/lazyload.gif" data-src="../assets/images/lq.jpg" alt="">
+                                    <p class="fw-bold mb-0">CHECK THÔNG TIN LIÊN QUÂN</p>
+                                   <p class="text-danger" style="font-size: 12px; font-style: italic;">
+                                        <span class="spinner-border spinner-border-sm text-danger" role="status" aria-hidden="true"></span>
+                                        10.000đ/day
+                                    </p>
+                                </div>
+                                                                <div class="col-6 text-center position-relative" role="button" data-bs-toggle="tooltip" data-bs-original-title="Nhấn vào đây để thuê TOOL" onclick="location.href='/thuetool/32';">
+                                    <img class="img-avatar img-avatar48 lazyload" src="assets/images/lazyload.gif" data-src="../assets/images/fo4.png" alt="">
+                                    <p class="fw-bold mb-0">FO4</p>
+                                   <p class="text-danger" style="font-size: 12px; font-style: italic;">
+                                        <span class="spinner-border spinner-border-sm text-danger" role="status" aria-hidden="true"></span>
+                                        10.000đ/day
+                                    </p>
+                                </div>
+                                                                <div class="col-6 text-center position-relative" role="button" data-bs-toggle="tooltip" data-bs-original-title="Nhấn vào đây để thuê TOOL" onclick="location.href='/thuetool/33';">
+                                    <img class="img-avatar img-avatar48 lazyload" src="assets/images/lazyload.gif" data-src="../assets/images/lq.jpg" alt="">
+                                    <p class="fw-bold mb-0">CHECK TÊN SKIN LIÊN QUÂN</p>
+                                   <p class="text-danger" style="font-size: 12px; font-style: italic;">
+                                        <span class="spinner-border spinner-border-sm text-danger" role="status" aria-hidden="true"></span>
+                                        10.000đ/day
+                                    </p>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<script>
+    const toggleBalance = () => {
+        const balanceElement = document.getElementById('balance');
+        const hiddenBalanceElement = document.getElementById('hiddenBalance');
+        const toggleButton = document.getElementById('toggleBalance');
+
+        if (balanceElement.style.display === 'none') {
+            balanceElement.style.display = 'inline';
+            hiddenBalanceElement.style.display = 'none';
+            toggleButton.className = 'fa fa-eye-slash';
+        } else {
+            balanceElement.style.display = 'none';
+            hiddenBalanceElement.style.display = 'inline';
+            toggleButton.className = 'fa fa-eye'; 
+        }
+    };
+
+    document.getElementById('toggleBalance').addEventListener('click', toggleBalance);
+</script>
+<footer class="dash-footer mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a role="button" data-bs-toggle="modal" data-bs-target="#privacy">Các điều khoản và điều kiện & Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-end">
+                <span class="mr-1">
+                    © Version <b style="color: red;">
+                        1.0.1 </b> |
+                    Powered By <a target="_blank" href="https://toolgiare.sbs">Boi</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Các điều khoản và điều kiện & Chính sách bảo mật</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="body">
+                <div class="modal-body">
+                    <div class="row">
+                        <p><strong><font color="#ff0000">Bảo vệ quyền riêng tư và Thu thập dữ liệu:</font></strong></p><p>Chúng tôi xin thông báo rằng mọi thông tin được thu thập từ các ứng dụng và trang web của Garena đều là công khai. Quá trình thu thập dữ liệu này được thực hiện hoàn toàn hợp pháp, tuân thủ nghiêm ngặt các quy định về bảo mật và quyền riêng tư của người dùng.</p><p><strong><font color="#ff0000">Quyền sở hữu trí tuệ:</font></strong></p><p>Chúng tôi xác nhận rằng mọi quyền sở hữu trí tuệ đều thuộc về Garena. Chúng tôi cam kết tuân thủ đầy đủ các quy định về bản quyền và sở hữu trí tuệ của Garena.</p><p><strong><font color="#ff0000" style="">Chấp nhận và Điều chỉnh điều khoản:</font></strong></p><p>Chúng tôi có quyền điều chỉnh và sửa đổi các điều khoản của mình vào bất kỳ thời điểm nào. Khi đăng nhập vào hệ thống, khách hàng sẽ được thông báo về những thay đổi trong điều khoản, và việc tiếp tục sử dụng hệ thống đồng nghĩa với việc chấp nhận các điều khoản đã được điều chỉnh.</p>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul id="top-menu">
+    <li><a class="menu-item" id="toggle-menu-button"><i class="fa fa-close"></i>
+            <span>Đóng Menu</span></a></li>
+<li><a class="menu-item " href="https://t.me/hiahihn"><i><img alt="" class="lazyload" src="assets/images/lazyload.gif" data-src="/assets/images/tele.png"></i> <span>Hỗ Trợ Telegram</span></a></li>
+</ul>
+<script>
+    const toggleMenuButton = document.getElementById('toggle-menu-button');
+    const topMenu = document.getElementById('top-menu');
+    toggleMenuButton.addEventListener('click', function() {
+        topMenu.classList.toggle('hidden');
+    });
+</script>
+<script>
+    var pusher = new Pusher('6314cd72df0fdfe32972', {
+        cluster: 'ap1',
+        useTLS: true 
+    });
+
+    </script>
+<script src="widgets/latest/globe.js" defer=""></script>
+<script src="assets/js/plugins/popper.min.js"></script>
+<script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/feather.min.js"></script>
+<script src="assets/js/plugins/simplebar.min.js"></script>
+<script src="assets/js/dash.js"></script>
+<script src="assets/js/plugins/simple-datatables.js"></script>
+<script src="assets/js/plugins/bootstrap-switch-button.min.js"></script>
+<script src="npm/simple-notify%401.0.4/dist/simple-notify.min.js"></script>
+<script src="assets/js/plugins/sweetalert2.all.min.js"></script>
+<script src="assets/js/plugins/datepicker-full.min.js"></script>
+<script src="assets/js/plugins/flatpickr.min.js"></script>
+<script src="assets/js/plugins/choices.min.js"></script>
+<!-- <script src="https://toolgiare.sbs/assets/js/jquery.form.js"></script> -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+<script>
+    var o = new ClipboardJS(".copy");
+    o.on("success", function(e) {
+        showMessage("Sao chép: " + e.text, 'success')
+    });
+    o.on("error", function(e) {
+        showMessage("Sao chép lỗi", 'error');
+    });
+</script>
+</body>
+</head></html>
