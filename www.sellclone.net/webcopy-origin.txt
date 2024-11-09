@@ -1,0 +1,328 @@
+Uri: https://cdn.discordapp.com/emojis/919784066767802398.gif?size=56&quality=lossless
+File Name: D:\crawl\www.sellclone.net\emojis\919784066767802398.gif
+Content Type: image/gif
+
+Uri: https://cdn.lordicon.com/lordicon.js
+File Name: D:\crawl\www.sellclone.net\lordicon.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js
+File Name: D:\crawl\www.sellclone.net\ajax\libs\clipboard.js\2.0.6\clipboard.min.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\css\all.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.ttf
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-brands-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-brands-400.woff2
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-brands-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-regular-400.ttf
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-regular-400.woff2
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.ttf
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.woff2
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-v4compatibility.ttf
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-v4compatibility.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-v4compatibility.woff2
+File Name: D:\crawl\www.sellclone.net\ajax\libs\font-awesome\6.0.0\webfonts\fa-v4compatibility.woff2
+Content Type: application/octet-stream
+
+Uri: https://flagicons.lipis.dev/flags/4x3/bd.svg
+File Name: D:\crawl\www.sellclone.net\flags\4x3\bd.svg
+Content Type: image/svg+xml
+
+Uri: https://flagicons.lipis.dev/flags/4x3/us.svg
+File Name: D:\crawl\www.sellclone.net\flags\4x3\us.svg
+Content Type: image/svg+xml
+
+Uri: https://flagicons.lipis.dev/flags/4x3/vn.svg
+File Name: D:\crawl\www.sellclone.net\flags\4x3\vn.svg
+Content Type: image/svg+xml
+
+Uri: https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap
+File Name: D:\crawl\www.sellclone.net\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap
+File Name: D:\crawl\www.sellclone.net\css2-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap
+File Name: D:\crawl\www.sellclone.net\css2-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf
+File Name: D:\crawl\www.sellclone.net\s\dmsans\v15\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf
+File Name: D:\crawl\www.sellclone.net\s\dmsans\v15\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf
+File Name: D:\crawl\www.sellclone.net\s\dmsans\v15\rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/dosis/v32/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7QV3A.ttf
+File Name: D:\crawl\www.sellclone.net\s\dosis\v32\HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7QV3A.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
+File Name: D:\crawl\www.sellclone.net\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf
+File Name: D:\crawl\www.sellclone.net\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf
+File Name: D:\crawl\www.sellclone.net\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf
+File Name: D:\crawl\www.sellclone.net\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf
+Content Type: font/ttf
+
+Uri: https://i.imgur.com/qaIBNyQ.gif
+File Name: D:\crawl\www.sellclone.net\qaIBNyQ.gif
+Content Type: image/gif
+
+Uri: https://i.imgur.com/qZ2Lq3B.gif
+File Name: D:\crawl\www.sellclone.net\qZ2Lq3B.gif
+Content Type: image/gif
+
+Uri: https://www.google.com/recaptcha/api.js
+File Name: D:\crawl\www.sellclone.net\recaptcha\api.js
+Content Type: text/javascript
+
+Uri: https://www.sellclone.net/
+File Name: D:\crawl\www.sellclone.net\index.htm
+Content Type: text/html
+
+Uri: https://www.sellclone.net/assets/storage/flags/flag_English.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\flags\flag_English.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/flags/flag_Vietnamese.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\flags\flag_Vietnamese.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/bg_login60K.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\bg_login60K.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/bg_registerUBV.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\bg_registerUBV.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/categoryB3IQ.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\categoryB3IQ.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/categoryDocumentOA7.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\categoryDocumentOA7.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/category_6T38WD.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\category_6T38WD.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/favicon_LSK.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\favicon_LSK.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/gif_loaderUSG.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\gif_loaderUSG.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/logo_dark_B1O.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\logo_dark_B1O.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/assets/storage/images/logo_light_D7Z.png
+File Name: D:\crawl\www.sellclone.net\assets\storage\images\logo_light_D7Z.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/client/chinh-sach-bao-mat
+File Name: D:\crawl\www.sellclone.net\client\chinh-sach-bao-mat.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/dieu-khoan-su-dung
+File Name: D:\crawl\www.sellclone.net\client\dieu-khoan-su-dung.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/forgot-password
+File Name: D:\crawl\www.sellclone.net\client\forgot-password.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/home/shop-account
+File Name: D:\crawl\www.sellclone.net\client\home\shop-account.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/home/shop-document
+File Name: D:\crawl\www.sellclone.net\client\home\shop-document.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/login
+File Name: D:\crawl\www.sellclone.net\client\login.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/privacy-policy
+File Name: D:\crawl\www.sellclone.net\client\privacy-policy.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/register
+File Name: D:\crawl\www.sellclone.net\client\register.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/terms
+File Name: D:\crawl\www.sellclone.net\client\terms.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/tool-check-live-fb
+File Name: D:\crawl\www.sellclone.net\client\tool-check-live-fb.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/client/tool-check-live-token-fb
+File Name: D:\crawl\www.sellclone.net\client\tool-check-live-token-fb.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/public/client/assets/css/pages/login/classic/login-2.css
+File Name: D:\crawl\www.sellclone.net\public\client\assets\css\pages\login\classic\login-2.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/public/cute-alert/cute-alert.js
+File Name: D:\crawl\www.sellclone.net\public\cute-alert\cute-alert.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/cute-alert/style.css
+File Name: D:\crawl\www.sellclone.net\public\cute-alert\style.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/public/datum/assets/css/backend-plugin.min.css
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\css\backend-plugin.min.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/public/datum/assets/css/images/layers-2x.png.html
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\css\images\layers-2x.png.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/public/datum/assets/css/images/layers.png.html
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\css\images\layers.png.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/public/datum/assets/css/images/marker-icon.png.html
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\css\images\marker-icon.png.html
+Content Type: text/html
+
+Uri: https://www.sellclone.net/public/datum/assets/images/user/1.jpg
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\images\user\1.jpg
+Content Type: image/jpeg
+
+Uri: https://www.sellclone.net/public/datum/assets/js/app.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\app.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/backend-bundle.min.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\backend-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/chart-custom.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\chart-custom.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/charts/01.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\charts\01.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/charts/02.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\charts\02.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/customizer.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\customizer.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/flex-tree.min.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\flex-tree.min.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/sidebar.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\sidebar.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/slider.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\slider.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/sweetalert.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\sweetalert.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/table-treeview.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\table-treeview.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/tree.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\tree.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/js/vector-map-custom.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\js\vector-map-custom.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/datum/assets/vendor/emoji-picker-element/index.js
+File Name: D:\crawl\www.sellclone.net\public\datum\assets\vendor\emoji-picker-element\index.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/js/jquery-3.6.0.js
+File Name: D:\crawl\www.sellclone.net\public\js\jquery-3.6.0.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/public/sweetalert2/default.css
+File Name: D:\crawl\www.sellclone.net\public\sweetalert2\default.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/public/sweetalert2/sweetalert2.js
+File Name: D:\crawl\www.sellclone.net\public\sweetalert2\sweetalert2.js
+Content Type: application/javascript
+
+Uri: https://www.sellclone.net/resources/css/backend.css?v=1.0.0
+File Name: D:\crawl\www.sellclone.net\resources\css\backend.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/resources/css/customize.css
+File Name: D:\crawl\www.sellclone.net\resources\css\customize.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/resources/css/responsive.css
+File Name: D:\crawl\www.sellclone.net\resources\css\responsive.css
+Content Type: text/css
+
+Uri: https://www.sellclone.net/resources/images/bg-buy.png
+File Name: D:\crawl\www.sellclone.net\resources\images\bg-buy.png
+Content Type: image/png
+
+Uri: https://www.sellclone.net/resources/js/jquery.js
+File Name: D:\crawl\www.sellclone.net\resources\js\jquery.js
+Content Type: application/javascript
+
